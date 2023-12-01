@@ -1,0 +1,21 @@
+
+docker search centos > centos.txt
+docker pull centos
+docker run centos
+docker run -it centos
+docker exec -it ubuntu-qLZA /bin/bash
+
+docker run -i -t centos
+
+docker pull continuumio/centos5_gcc5_base
+docker run -i -t continuumio/centos5_gcc5_base
+docker run -i -t centos5_gcc5_base
+docker run -i -t centos5_gcc5_base
+
+https://hub.docker.com/_/centos
+https://osric.com/chris/accidental-developer/2017/08/running-centos-in-a-docker-container/
+
+https://cdmana.com/2022/136/202205161413070916.html
+docker save -o centos.tar.gz centos
+docker load -i centos.tar.gz
+docker rmi -f centos

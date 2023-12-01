@@ -1,0 +1,7 @@
+#! /bin/bash
+cd src
+mkdir build
+cd build
+cmake ..
+cmake --build .
+./Main

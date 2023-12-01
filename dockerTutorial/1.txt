@@ -1,0 +1,6 @@
+The Getting Started project is a simple GitHub repository which contains everything you need to build an image and run it as a container.
+Clone the repository by running Git in a container.
+You can also type the command directly in a command line interface.
+
+docker run --name repo alpine/git clone https://github.com/docker/getting-started.git
+docker cp repo:/git/getting-started/ .

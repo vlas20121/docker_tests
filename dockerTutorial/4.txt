@@ -1,0 +1,6 @@
+Now save and share your image
+Save and share your image on Docker Hub to enable other users to easily download and run the image on any destination machine.
+
+
+docker tag docker101tutorial vlas20121/docker101tutorial
+docker push vlas20121/docker101tutorialdocker

@@ -1,0 +1,7 @@
+docker_build_scripts: Scripts for building cmake project using centos docker image.
+preparation  steps:
+	step0: need to setup env variables in config.bat
+	step1: 1create_container.bat
+	step2: 2dnf_update.bat
+run cmake build & tests
+	step3: 3cmake.bat

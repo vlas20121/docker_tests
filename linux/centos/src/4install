@@ -1,0 +1,8 @@
+#! /bin/bash
+
+dnf update
+dnf upgrade
+dnf install mc
+dnf install cmake
+dnf install gcc-c++
+dnf install -y ncurses-devel

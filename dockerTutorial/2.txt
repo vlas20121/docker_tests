@@ -1,0 +1,4 @@
+A Docker image is a private file system just for your container. It provides all the files and code your container needs.
+
+cd getting-started
+docker build -t docker101tutorial .

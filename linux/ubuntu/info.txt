@@ -1,0 +1,18 @@
+https://russianblogs.com/article/7013739079/
+1 docker pull ubuntu
+
+2 Запустить контейнер как демон
+       docker run --name dc1 -i -t ubuntu /bin/bash
+Ctrl + P + Q Выход из контейнера хранителя
+
+3 Запустить новый процесс в работающем контейнере
+	Docker exec [-d] [-i] [-t] Имя контейнера [КОМАНДА] [ARG…]
+Присоединиться к работающему контейнеру (повторно войти в контейнер хранителя после выхода)
+	docker exec -it dc1 /bin/bash
+
+4 4 Запускаем контейнер и выполняем команды в фоновом режиме
+	Docker run -d Имя зеркала [КОМАНДА] [ARG…]
+	docker exec -it dc1 /bin/bash
+Примеры:
+	docker exec -it dc1 /bin/sh -c "while true; do echo hello world; sleep 1;done"
+	docker run --name dc2 -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1;done"

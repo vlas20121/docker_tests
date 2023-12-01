@@ -1,0 +1,10 @@
+#! /bin/bash
+sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-Linux-*
+sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-Linux-*
+dnf -y update
+dnf -y upgrade
+dnf -y install mc
+dnf -y install cmake
+dnf -y install gcc-c++
+dnf -y install ncurses-devel
+dnf -y install boost-devel
